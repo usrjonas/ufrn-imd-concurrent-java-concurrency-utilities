@@ -21,8 +21,7 @@ import java.util.concurrent.Future;
  */
 public final class ExecutorWorkStealingPool {
 	/**
-	 * Main method
-	 * @param args Command line arguments
+	 * Execute method
 	 */
 	public static void execute() {
 

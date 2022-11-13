@@ -21,7 +21,7 @@ import java.util.concurrent.Future;
  */
 public final class ExecutorCached {
 	/**
-	 * Main method
+	 * Execute method
 	 */
 	public static void execute() {
 

@@ -25,7 +25,7 @@ public final class ExecutorFixed {
     private static final int NUM_THREADS = 8;
 
 	/**
-	 * Main method
+	 * Execute method
 	 */
 	public static void execute() {
 

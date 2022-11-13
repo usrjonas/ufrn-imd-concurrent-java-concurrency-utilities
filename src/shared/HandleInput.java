@@ -11,6 +11,7 @@ public class HandleInput {
     /**
      * Reads the number of iteractions to calculate the euler number
      * @return Number of iteractions
+     * @throws InputMismatchException
      */
     public static final int readNumIteractions() throws InputMismatchException {
         Scanner scanner = new Scanner(System.in);
