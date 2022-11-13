@@ -26,7 +26,7 @@ public class EulerTermCalculator implements Callable<BigDecimal> {
     /**
      * Number to calculate factorial
      */
-    private BigDecimal number;
+    private final BigDecimal number;
 
     /**
      * Parameterized constructor
