@@ -9,6 +9,7 @@ import java.util.concurrent.Future;
  * Utility class to handle list values
  *
  * @author <a href="mailto:lemosantony@gmail.com">Antony Lemos</a>
+ * @author <a href="mailto:jonas.oliveira.111@ufrn.edu.br">Jonas de Oliveira</a>
  */
 public class HandleList {
     /**

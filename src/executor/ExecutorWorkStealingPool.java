@@ -17,6 +17,7 @@ import java.util.concurrent.Future;
  * Concurrent calculation of the euler number using multiple
  * threads (more specifically, within a work stealing pool)
  *
+ * @author <a href="mailto:lemosantony@gmail.com">Antony Lemos</a>
  * @author <a href="mailto:jonas.oliveira.111@ufrn.edu.br">Jonas de Oliveira</a>
  */
 public final class ExecutorWorkStealingPool {

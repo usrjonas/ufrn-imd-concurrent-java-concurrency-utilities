@@ -5,7 +5,9 @@ import java.util.Scanner;
 
 /**
  * Utility class to handle input values
+ *
  * @author <a href="mailto:lemosantony@gmail.com">Antony Lemos</a>
+ * @author <a href="mailto:jonas.oliveira.111@ufrn.edu.br">Jonas de Oliveira</a>
  */
 public class HandleInput {
     /**

@@ -9,6 +9,7 @@ import java.util.concurrent.Callable;
  * <code>Callable</code> object to run upon a thread able to
  * return the calculated factorial
  *
+ * @author <a href="mailto:lemosantony@gmail.com">Antony Lemos</a>
  * @author <a href="mailto:jonas.oliveira.111@ufrn.edu.br">Jonas de Oliveira</a>
  * @see java.util.concurrent.Callable
  */
