@@ -45,10 +45,10 @@ public class EulerTermCalculator implements Callable<BigDecimal> {
 	 * @return Factorial of the number
 	 */
 	private BigDecimal factorial(BigDecimal number) {
-		if (number.compareTo(new BigDecimal(1)) <= 0) {
-			return new BigDecimal(1);
+		if (number.compareTo(ONE) <= 0) {
+			return ONE;
 		} else {
-			return number.multiply(factorial(number.subtract(new BigDecimal(1))));
+			return number.multiply(factorial(number.subtract(ONE)));
 		}
 	}
 }
