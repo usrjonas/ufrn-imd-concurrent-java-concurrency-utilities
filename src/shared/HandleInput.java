@@ -9,17 +9,17 @@ import java.util.Scanner;
  */
 public class HandleInput {
     /**
-     * Reads the number of iteractions to calculate the euler number
-     * @return Number of iteractions
+     * Reads the number of interactions to calculate the euler number
+     * @return Number of interactions
      * @throws InputMismatchException
      */
-    public static final int readNumIteractions() throws InputMismatchException {
+    public static final int readNumInteractions() throws InputMismatchException {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the number of iterations: ");
-        int numIteractions = scanner.nextInt();
+        int numInteractions = scanner.nextInt();
 
         scanner.close();
-        return numIteractions;
+        return numInteractions;
     }
 }

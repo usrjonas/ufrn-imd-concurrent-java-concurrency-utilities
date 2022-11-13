@@ -7,12 +7,14 @@ import java.util.Scanner;
 
 /**
  * Main class
+ *
  * @author <a href="mailto:lemosantony@gmail.com">Jonas de Oliveira</a>
  */
 public class RunExecutor {
 
     /**
      * Main method
+     *
      * @param args
      * @throws InputMismatchException
      */

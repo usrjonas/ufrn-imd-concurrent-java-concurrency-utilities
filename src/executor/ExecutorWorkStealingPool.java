@@ -20,31 +20,31 @@ import java.util.concurrent.Future;
  * @author <a href="mailto:jonas.oliveira.111@ufrn.edu.br">Jonas de Oliveira</a>
  */
 public final class ExecutorWorkStealingPool {
-	/**
-	 * Execute method
-	 */
-	public static void execute() {
+    /**
+     * Execute method
+     */
+    public static void execute() {
 
-        final int numIteractions = HandleInput.readNumIteractions();
-		ExecutorService executor = Executors.newWorkStealingPool();
-		
-		List<Future<BigDecimal>> results = new ArrayList<>();
+        final int numInteractions = HandleInput.readNumInteractions();
+        ExecutorService executor = Executors.newWorkStealingPool();
 
-		for ( int i = 1; i <= numIteractions; i++ ) {
-			Callable<BigDecimal> calculator = new EulerTermCalculator(new BigDecimal(i));
-			results.add(executor.submit(calculator));
-		}
+        List<Future<BigDecimal>> results = new ArrayList<>();
 
-		try {
-			BigDecimal eulerNumber = HandleList.sumAllValuesInListAndAddOne(results);
+        for (int i = 1; i <= numInteractions; i++) {
+            Callable<BigDecimal> calculator = new EulerTermCalculator(new BigDecimal(i));
+            results.add(executor.submit(calculator));
+        }
+
+        try {
+            BigDecimal eulerNumber = HandleList.sumAllValuesInListAndAddOne(results);
             System.out.println("=== Work Stealing Pool ===");
             System.out.println("Euler number: " + eulerNumber);
-            System.out.println("Number of executor threads: " + (Thread.activeCount()-1));
-		} catch (ExecutionException | InterruptedException e) {
-			e.printStackTrace();
-		} finally {
-			System.exit(0);
-			executor.shutdown();
-		}
-	}
+            System.out.println("Number of executor threads: " + (Thread.activeCount() - 1));
+        } catch (ExecutionException | InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            System.exit(0);
+            executor.shutdown();
+        }
+    }
 }
